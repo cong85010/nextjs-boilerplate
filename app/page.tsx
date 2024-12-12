@@ -1,11 +1,10 @@
-import { Button } from '@/components/ui/button';
-import { PiIcon } from 'lucide-react';
-
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Button>Xin chao</Button>
-      <PiIcon />
+      <h1 className="text-4xl font-bold text-center text-primary-500">
+        This is a Next.js boilerplate with Tailwind CSS, TypeScript, ESLint, Prettier, ShadCn UI,
+        and Lucide icons.
+      </h1>
     </div>
   );
 }

@@ -1,7 +1,10 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // hide static route
+  devIndicators: {
+    appIsrStatus: false,
+  },
 };
 
 export default nextConfig;

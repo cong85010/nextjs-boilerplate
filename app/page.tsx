@@ -1,10 +1,13 @@
-export default function Home() {
+import Header from '@/components/header';
+import Home from '@/components/home';
+import Footer from '@/components/footer';
+
+export default function LandingPage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1 className="text-4xl font-bold text-center text-primary-500">
-        This is a Next.js boilerplate with Tailwind CSS, TypeScript, ESLint, Prettier, ShadCn UI,
-        and Lucide icons.
-      </h1>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <Home />
+      <Footer />
     </div>
   );
 }

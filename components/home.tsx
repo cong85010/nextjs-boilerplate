@@ -1,101 +1,67 @@
-import React from 'react';
-import Link from 'next/link';
+'use client';
+
+import { Check } from 'lucide-react';
+import Image from 'next/image';
 import { Button } from './ui/button';
-import { Zap, Package, Layers, Github } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Header from './header';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
+  const t = useTranslations('Home');
   return (
-    <main className="flex-1">
-      <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 md:h-[calc(100vh-50px)] ">
-        <div className="relative container px-4 md:px-6 mx-auto h-full flex items-center justify-center">
-          <div className="flex flex-col justify-center items-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                Next.js Boilerplate
-              </h1>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Jumpstart your Next.js projects with our feature-rich, customizable boilerplate.
-              </p>
+    <div className="min-h-screen bg-[#0a0a20] text-white">
+      <Header />
+      {/* Main Content */}
+      <main className="container mx-auto px-4 md:px-6 py-12 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-8">
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{t('title')}</h1>
+
+            <div className="space-y-4">
+              <p className="text-gray-300">{t('intro1')}</p>
+              <p className="text-gray-300">{t('intro2')}</p>
             </div>
-            <div className="space-x-4">
-              <Button asChild>
-                <Link href="#get-started">Get Started</Link>
+
+            <p className="font-medium">{t('perfectChoice')}</p>
+
+            <ul className="space-y-3">
+              <li className="flex items-center gap-3">
+                <Check className="h-5 w-5 text-emerald-400 flex-shrink-0" />
+                <span>{t('feature1')}</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Check className="h-5 w-5 text-emerald-400 flex-shrink-0" />
+                <span>{t('feature2')}</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Check className="h-5 w-5 text-emerald-400 flex-shrink-0" />
+                <span>{t('feature3')}</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Check className="h-5 w-5 text-emerald-400 flex-shrink-0" />
+                <span>{t('feature4')}</span>
+              </li>
+            </ul>
+
+            <div>
+              <Button className="bg-blue-600 hover:bg-blue-700 px-8 py-6 text-lg">
+                {t('registerNow')}
               </Button>
-              <Button variant="outline" asChild>
-                <Link href="https://github.com/cong85010/nextjs-boilerplate">
-                  <Github className="mr-2 h-4 w-4" />
-                  GitHub
-                </Link>
-              </Button>
             </div>
           </div>
-        </div>
-      </section>
-      <section
-        id="features"
-        className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
-      >
-        <div className="container px-4 md:px-6 mx-auto">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">
-            Features
-          </h2>
-          <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
-            <Card>
-              <CardHeader>
-                <Package className="h-8 w-8 mb-2" />
-                <CardTitle>Pre-configured Setup</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Hit the ground running with our carefully curated tech stack and configurations.
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <Layers className="h-8 w-8 mb-2" />
-                <CardTitle>Modular Architecture</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Organized project structure for scalability and maintainability.
-              </CardContent>
-            </Card>
-            <Card>
-              <CardHeader>
-                <Zap className="h-8 w-8 mb-2" />
-                <CardTitle>Performance Optimized</CardTitle>
-              </CardHeader>
-              <CardContent>
-                Built with best practices for optimal loading speeds and user experience.
-              </CardContent>
-            </Card>
+
+          <div className="flex justify-center">
+            <Image
+              src="/images/proxy-servers.png"
+              alt="Proxy servers illustration"
+              width={500}
+              height={500}
+              className="object-contain"
+              priority
+            />
           </div>
         </div>
-      </section>
-      <section id="get-started" className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6  mx-auto">
-          <div className="flex flex-col items-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get Started</h2>
-              <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                Clone the repository and start building your next project in minutes.
-              </p>
-            </div>
-            <div className="w-full md:min-w-[36rem] sm:max-w-sm space-y-2">
-              <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto dark:bg-gray-800">
-                <code className="text-start">
-                  <p>git clone https://github.com/cong85010/nextjs-boilerplate.git</p>
-                  <p>cd nextjs-boilerplate</p>
-                  <p>npm install</p>
-                  <p>npm run dev</p>
-                </code>
-              </pre>
-            </div>
-            <Button asChild>
-              <Link href="https://github.com/cong85010/nextjs-boilerplate">View on GitHub</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-    </main>
+      </main>
+    </div>
   );
 }

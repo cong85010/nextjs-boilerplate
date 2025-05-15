@@ -1,0 +1,45 @@
+{
+  "GlobalError": {
+    "pageError": "Lỗi trang",
+    "oops": "Oops! Trang bạn đang tìm kiếm không tồn tại. Vui lòng thử lại sau",
+    "goBackHome": "Quay lại trang chủ",
+    "reload": "Tải lại"
+  },
+  "Error": {
+    "pageError": "Lỗi trang",
+    "oops": "Oops! Trang bạn đang tìm kiếm không tồn tại. Vui lòng thử lại sau",
+    "goBackHome": "Quay lại trang chủ",
+    "reload": "Tải lại"
+  },
+  "NotFound": {
+    "pageNotFound": "Trang không tồn tại",
+    "oops": "Oops! Trang bạn đang tìm kiếm không tồn tại.",
+    "goBackHome": "Quay lại trang chủ"
+  },
+  "Loading": {
+    "loading": "Đang tải..."
+  },
+  "Header": {
+    "home": "Trang chủ",
+    "advantages": "Ưu điểm",
+    "products": "Sản phẩm",
+    "countries": "Quốc gia",
+    "referralProgram": "Chương trình giới thiệu",
+    "customers": "Khách hàng",
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "english": "English",
+    "vietnamese": "Tiếng Việt"
+  },
+  "Home": {
+    "title": "MUA PROXY IPV4 & IPV6 GIÁ RẺ - UY TÍN - TỐC ĐỘ CAO",
+    "intro1": "Bạn đang cần một giải pháp proxy ổn định, nhanh và bảo mật? abcProxy.com là lựa chọn lý tưởng dành cho bạn!",
+    "intro2": "Chúng tôi cung cấp dịch vụ proxy IPV4 & IPV6 chất lượng cao, IP sạch, tốc độ mạnh mẽ và mức giá cạnh tranh nhất thị trường.",
+    "perfectChoice": "abcProxy.com - Lựa chọn hoàn hảo cho nhu cầu của bạn:",
+    "feature1": "Giá thành hợp lý, tốc độ cao",
+    "feature2": "Proxy riêng tư 100%",
+    "feature3": "Hỗ trợ đầy đủ HTTP/s và Socks5",
+    "feature4": "Hỗ trợ 24/7, luôn sẵn sàng giải đáp",
+    "registerNow": "Đăng ký ngay"
+  }
+}

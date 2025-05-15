@@ -1,0 +1,45 @@
+{
+  "GlobalError": {
+    "pageError": "Page Error",
+    "oops": "Oops! The page you're looking for doesn't exist. Please try again later",
+    "goBackHome": "Go back home",
+    "reload": "Reload"
+  },
+  "Error": {
+    "pageError": "Page Error",
+    "oops": "Oops! The page you're looking for doesn't exist. Please try again later",
+    "goBackHome": "Go back home",
+    "reload": "Reload"
+  },
+  "NotFound": {
+    "pageNotFound": "Page Not Found",
+    "oops": "Oops! The page you're looking for doesn't exist.",
+    "goBackHome": "Go back home"
+  },
+  "Loading": {
+    "loading": "Loading..."
+  },
+  "Header": {
+    "home": "Home",
+    "advantages": "Advantages",
+    "products": "Products",
+    "countries": "Countries",
+    "referralProgram": "Referral Program",
+    "customers": "Customers",
+    "login": "Login",
+    "register": "Register",
+    "english": "English",
+    "vietnamese": "Tiếng Việt"
+  },
+  "Home": {
+    "title": "BUY PROXY IPV4 & IPV6 CHEAP - TRUST - HIGH SPEED",
+    "intro1": "Are you looking for a stable, fast, and secure proxy solution? abcProxy.com is the perfect choice for you!",
+    "intro2": "We offer high-quality proxy IPV4 & IPV6 services, clean IPs, strong speed, and the most competitive price in the market.",
+    "perfectChoice": "abcProxy.com - The perfect choice for your needs:",
+    "feature1": "Reasonable price, high speed",
+    "feature2": "100% private proxy",
+    "feature3": "Full support for HTTP/s and Socks5",
+    "feature4": "24/7 support, always ready to answer",
+    "registerNow": "Register now"
+  }
+}
